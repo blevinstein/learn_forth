@@ -3,18 +3,18 @@
 5 2 /mod .s drop drop
 5 negate .s drop
 
-: nip
+: nip ( x y -- y )
   swap drop ;
 
-: tuck
+: tuck ( x y -- y x y )
   swap over ;
 
-: negate
+: negate ( x -- -x)
   0 swap - ;
 
-: /mod
+: /mod ( x y -- x%y x/y )
   2dup / -rot ( x y -- x/y x y )
-  2dup / * -  ( x y -- x mod y )
+  2dup / * -  ( x y -- x%y )
   swap ;
 
 1 2 nip .s drop

@@ -1,0 +1,7 @@
+\ -    ( x y -- x-y )
+\ drop ( x -- )
+\ dup  ( x -- x x )
+\ over ( x y -- x y x )
+\ rot  ( x y z -- y z x )
+\ nip  ( x y -- y )
+\ tuck ( x y -- y x y )
